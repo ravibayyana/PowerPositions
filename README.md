@@ -4,8 +4,7 @@ Running Power Positions on Cmd Line or as Windows Service
 
 ## PowerService.dll Location
 
-1. Downloaded from: https://github.com/kkmoorthy/PetroineosCodingChallenge
-2. `PowerService.dll` in placed in `ExternalLibs/` folder
+`PowerService.dll` in placed in `ExternalLibs/` folder
 
 ## Default Configure Settings
 
@@ -51,9 +50,12 @@ sc.exe create PowerPositions binPath= "C:\full\path\to\PowerPositions\publish\Re
 sc.exe start PowerPositions 
 
 # Stop the service
-sc.exe stop PowerPositions 
+sc.exe stop PowerPositions
 
 # Delete the service
 sc.exe delete PowerPositions
 
 ```
+## SnapShots
+
+![](Snapshots/output.jpg)
