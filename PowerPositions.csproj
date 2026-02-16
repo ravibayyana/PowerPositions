@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>dotnet-PowerPositions-2860b426-3d25-4f91-864a-b51b5cefc375</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="PowerPositions.Tests\**" />
+	  <Content Remove="PowerPositions.Tests\**" />
+	  <EmbeddedResource Remove="PowerPositions.Tests\**" />
+	  <None Remove="PowerPositions.Tests\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.12" />
+		<PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="9.0.12" />
+
+		<PackageReference Include="Serilog" Version="4.3.1" />
+		<PackageReference Include="Serilog.AspNetCore" Version="10.0.0" />
+		<PackageReference Include="Serilog.Enrichers.Thread" Version="4.0.0" />
+		<PackageReference Include="Serilog.Extensions.Hosting" Version="10.0.0" />
+		<PackageReference Include="Serilog.Settings.Configuration" Version="10.0.0" />
+		<PackageReference Include="Serilog.Sinks.Console" Version="6.1.1" />
+		<PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
+		<PackageReference Include="System.Reactive" Version="6.1.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="ExternalLibs\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="PowerService">
+			<HintPath>ExternalLibs\PowerService.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+</Project>
