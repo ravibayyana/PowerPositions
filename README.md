@@ -1,11 +1,11 @@
 # Quick Start Guide 🚀
 
-Running Power Positions on Cmd Line or Windows Service
+Running Power Positions on Cmd Line or as Windows Service
 
 ## PowerService.dll Location
 
 1. Downloaded from: https://github.com/kkmoorthy/PetroineosCodingChallenge
-2. Place `PowerService.dll` in the `ExternalLibs/` folder
+2. `PowerService.dll` in placed in `ExternalLibs/` folder
 
 ## Default Configure Settings
 
